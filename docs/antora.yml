@@ -1,5 +1,5 @@
-name: component-a
-title: Component A
+name: atomdoc
+title: atomdoc
 version: 1.0
 nav:
 - modules/ROOT/nav.adoc
