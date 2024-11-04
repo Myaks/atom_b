@@ -2,5 +2,18 @@ name: atomdoc
 title: atomdoc
 version: 1.0
 nav:
-- modules/ROOT/nav.adoc
-- modules/module-one/nav.adoc
+  - modules:
+      - component-a
+      - component-b
+
+components:
+  - component-a:
+      title: Component A
+      url: https://gitlab.com/antora/demo/demo-component-a.git  # URL вашего репозитория
+      branch: main  # Или другая ветка
+      base-url: {repo}  # Важно!  Используйте {repo} для правильных ссылок внутри.
+  - component-b:
+      title: Component B
+      url: https://gitlab.com/antora/demo/demo-component-b.git  # URL вашего репозитория
+      branch: main  # Или другая ветка
+      base-url: {repo} # Важно!  Используйте {repo} для правильных ссылок внутри.
